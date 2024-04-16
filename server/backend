@@ -1,0 +1,27 @@
+Donor Routes: //tested
+GET /donors
+GET /donors/:id
+POST /donors
+PUT /donors/:id
+DELETE /donors/:id
+
+Blood Donation Routes: //tested
+GET /donations
+GET /donations/:id
+POST /donations
+PUT /donations/:id
+DELETE /donations/:id
+
+Recipient Routes: //tested
+GET /recipients
+GET /recipients/:id
+POST /recipients
+PUT /recipients/:id
+DELETE /recipients/:id
+
+Blood Inventory Routes: //tested
+GET /inventory
+GET /inventory/:id
+POST /inventory
+PUT /inventory/:id
+DELETE /inventory/:id

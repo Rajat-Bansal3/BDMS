@@ -1,0 +1,8 @@
++-------------+--------------+------+-----+---------+----------------+
+| Field       | Type         | Null | Key | Default | Extra          |
++-------------+--------------+------+-----+---------+----------------+
+| CenterID    | int          | NO   | PRI | NULL    | auto_increment |
+| Name        | varchar(255) | YES  |     | NULL    |                |
+| Location    | varchar(255) | YES  |     | NULL    |                |
+| ContactInfo | varchar(255) | YES  |     | NULL    |                |
++-------------+--------------+------+-----+---------+----------------+

@@ -1,0 +1,8 @@
++-------------+--------------+------+-----+---------+----------------+
+| Field       | Type         | Null | Key | Default | Extra          |
++-------------+--------------+------+-----+---------+----------------+
+| StaffID     | int          | NO   | PRI | NULL    | auto_increment |
+| Name        | varchar(255) | YES  |     | NULL    |                |
+| Role        | varchar(50)  | YES  |     | NULL    |                |
+| ContactInfo | varchar(255) | YES  |     | NULL    |                |
++-------------+--------------+------+-----+---------+----------------+

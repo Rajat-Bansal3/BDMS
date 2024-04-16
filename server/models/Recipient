@@ -1,0 +1,11 @@
++----------------+--------------+------+-----+---------+----------------+
+| Field          | Type         | Null | Key | Default | Extra          |
++----------------+--------------+------+-----+---------+----------------+
+| RecipientID    | int          | NO   | PRI | NULL    | auto_increment |
+| Name           | varchar(255) | YES  |     | NULL    |                |
+| BloodType      | varchar(10)  | YES  |     | NULL    |                |
+| Age            | int          | YES  |     | NULL    |                |
+| Gender         | varchar(10)  | YES  |     | NULL    |                |
+| ContactInfo    | varchar(255) | YES  |     | NULL    |                |
+| MedicalHistory | text         | YES  |     | NULL    |                |
++----------------+--------------+------+-----+---------+----------------+

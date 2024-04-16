@@ -1,0 +1,10 @@
++---------------+--------------+------+-----+---------+----------------+
+| Field         | Type         | Null | Key | Default | Extra          |
++---------------+--------------+------+-----+---------+----------------+
+| DonationID    | int          | NO   | PRI | NULL    | auto_increment |
+| DonorID       | int          | YES  | MUL | NULL    |                |
+| DonationDate  | date         | YES  |     | NULL    |                |
+| BloodType     | varchar(10)  | YES  |     | NULL    |                |
+| Quantity      | decimal(5,2) | YES  |     | NULL    |                |
+| TestingStatus | varchar(20)  | YES  |     | NULL    |                |
++---------------+--------------+------+-----+---------+----------------+

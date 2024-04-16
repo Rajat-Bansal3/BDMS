@@ -13,10 +13,10 @@ const Header = () => {
             <Link to="/" className="text-white hover:text-gray-200">Home</Link>
           </li>
           <li className="mr-4">
-            <Link to="/about" className="text-white hover:text-gray-200">About</Link>
+            <Link to="/about-us" className="text-white hover:text-gray-200">About</Link>
           </li>
           <li className="mr-4">
-            <Link to="/donation" className="text-white hover:text-gray-200">Donate</Link>
+            <Link to="/donate" className="text-white hover:text-gray-200">Donate</Link>
           </li>
           <li className="mr-4">
             <Link to="/recipient" className="text-white hover:text-gray-200">Recipient</Link>

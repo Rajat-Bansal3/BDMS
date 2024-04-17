@@ -95,3 +95,18 @@ exports.available = async (req, res, next) => {
     next(errorHandler(500, error));
   }
 };
+exports.status = async (req, res, next) => {
+  const type = req.params.type
+  const query = "select * from BloodInventory where BloodType = ?"
+  try {
+    const database = await db();
+    const [rows , fields] = await database.query(query , [type]);
+    if (!rows || rows.length === 0) {
+      return res.status(404).json({ message: "Blood Inventory is empty" });
+    }
+    res.status(200).json({ message: "ok", blood:rows.reduce((acc, row) => acc + parseFloat(row.Quantity), 0) });
+  } catch (error) {
+    console.log("Error in status:", error.message);
+    next(errorHandler(500, error));
+  }
+}

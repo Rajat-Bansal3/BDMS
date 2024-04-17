@@ -8,6 +8,7 @@ const inventoryController = require('../controllers/inventory.controller.js');
 // Define routes for Inventory CRUD operations
 router.get('/', inventoryController.getAllInventory);
 router.get('/available', inventoryController.available);
+router.get('/status/:type', inventoryController.status);
 router.get('/:id', inventoryController.getInventoryById);
 router.post('/', inventoryController.createInventory);
 router.put('/:id', inventoryController.updateInventory);

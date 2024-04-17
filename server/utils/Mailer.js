@@ -10,7 +10,7 @@ const sendMail = async(option)=> {
         }
     })
     const emailOptions = {
-        from: "Logit support<support@logit.com>",
+        from: "Blood Request <BloodLink@gmail.com>",
         to:option.email,
         subject:option.subject,
         text:option.text 

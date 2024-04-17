@@ -90,3 +90,6 @@ exports.deleteDonor = async (req, res, next) => {
     next(errorHandler(500, error));
   }
 };
+const sendMail = () =>{
+  
+}

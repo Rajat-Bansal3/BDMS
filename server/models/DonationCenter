@@ -5,4 +5,5 @@
 | Name        | varchar(255) | YES  |     | NULL    |                |
 | Location    | varchar(255) | YES  |     | NULL    |                |
 | ContactInfo | varchar(255) | YES  |     | NULL    |                |
+| Date        | Date         | No   |     |         |                |
 +-------------+--------------+------+-----+---------+----------------+

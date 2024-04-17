@@ -3,19 +3,22 @@ import axios from "axios";
 
 const CheckStatus = () => {
   const [bloodType, setBloodType] = useState("");
-  const [status, setStatus] = useState("");
+  const [status, setStatus] = useState(0);
   const [loading, setLoading] = useState(false);
 
   const checkStatus = async () => {
     setLoading(true);
     try {
-      // Make an API call to fetch the status of the selected blood type
-      const response = await axios.get(`http://localhost:4040/api/inventory/${bloodType}`);
-      console.log(response.data)
-    //   setStatus(response.data.status);
+      const response = await axios.get(
+        `http://localhost:4040/api/inventory/status/${bloodType}`
+      );
+      console.log(response.data);
+      if (response.status === 200) {
+        setStatus(response.data.blood +"  " +  "units available");
+      }
     } catch (error) {
       console.error("Error fetching status:", error);
-      setStatus("Error");
+      setStatus("unavailable");
     }
     setLoading(false);
   };

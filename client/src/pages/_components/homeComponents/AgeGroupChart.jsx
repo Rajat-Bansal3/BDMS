@@ -32,9 +32,9 @@ const AgeGroupChart = () => {
 
     fetchAgeData();
 
-    // Cleanup function
+    
     return () => {
-      // Destroy the chart instance to prevent memory leaks
+      
       if (ageData.labels && ageData.labels.length > 0) {
         const chartCanvas = document.getElementById('ageGroupChart');
         const chartInstance = Chart.getChart(chartCanvas);

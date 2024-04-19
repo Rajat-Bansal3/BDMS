@@ -107,12 +107,7 @@ exports.getMostRecentCenter = async (req, res, next) => {
     if (donation.length === 0) {
       return next(errorHandler(404, "No upcoming donations found"));
     }
-    sendMail({
-      from: "Donor Appointment<BloodLink@gmail.com>",
-      to: donation[0].ContactInfo,
-      subject: "Donating req from a respectful citizen",
-      text: "mail to book appointment for today for a Donor to Donate Blood",
-    });
+    
     res.status(200).json({ message: "ok", donation });
   } catch (error) {
     console.log("Error in getUpcomingDonation:", error.message);
